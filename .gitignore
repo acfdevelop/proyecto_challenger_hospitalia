@@ -11,7 +11,7 @@ __pycache__/
 # Base vectorial generada
 vectorstore/
 
-generar_pdfs.py
+script/generar_pdfs.p
 
 .txt
 
