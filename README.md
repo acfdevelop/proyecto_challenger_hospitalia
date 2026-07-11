@@ -1,0 +1,1 @@
+HospitalIA es un asistente inteligente que ayuda a pacientes y familiares a resolver dudas frecuentes utilizando la documentación institucional del Hospital San Gabriel.
