@@ -30,7 +30,7 @@ def nodo_triaje(state):
     )
     print("Triaje decidió:", decision)
     return {
-        "decisión": decision
+        "decision": decision
     }
 def nodo_pedir_info(state):
 
@@ -56,7 +56,7 @@ def decidir_ruta(state):
         return "rag"
 
     elif state["decision"] == "ABRIR_TICKET":
-        return "ticket"
+        return "abrir_ticket"
 
     elif state["decision"] == "PEDIR_INFO":
         return "pedir_info"

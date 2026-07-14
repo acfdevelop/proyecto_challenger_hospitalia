@@ -17,13 +17,14 @@ AUTO_RESOLVER
 - Exámenes.
 - Procedimientos.
 - Información contenida en los documentos.
+- Reclamos.
 
 PEDIR_INFO
 - Cuando falte información para responder.
 - Cuando la pregunta sea demasiado ambigua.
 
 ABRIR_TICKET
-- Reclamos.
+
 - Denuncias.
 - Problemas técnicos.
 - Solicitudes que requieren intervención humana.
