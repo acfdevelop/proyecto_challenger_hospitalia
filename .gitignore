@@ -8,8 +8,6 @@
 __pycache__/
 *.pyc
 
-# Base vectorial generada
-vectorstore/
-
+#textos generados
 .txt
 
