@@ -9,6 +9,11 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import ChatGoogleGenerativeAI
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+
+VECTORSTORE_DIR = BASE_DIR / "vectorstore"
 
 load_dotenv()
 
@@ -98,7 +103,7 @@ def cargar_vectorstore():
     )
 
     vectorstore = FAISS.load_local(
-        "vectorstore",
+        str(VECTORSTORE_DIR),
         embeddings,
         allow_dangerous_deserialization=True
     )
