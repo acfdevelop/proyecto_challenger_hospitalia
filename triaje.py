@@ -28,14 +28,3 @@ def realizar_triaje(pregunta):
 
     return respuesta.content.strip()
 
-if __name__ == "__main__":
-
-    preguntas = ["Cuales son los derechos del paciente", 
-                 "Cual es el horario de visitas", 
-                 "Donde puedo presentar un reclamo"]
-    
-    for pregunta in preguntas:
-        print("*"*30)
-        print(pregunta)
-        print()
-        print(realizar_triaje(pregunta))

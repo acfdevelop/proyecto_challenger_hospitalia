@@ -3,6 +3,8 @@ from rag import inicializar
 
 
 print("=== HospitalIA ===")
+print("Soy tu asistente inteligente, pregunta lo que quieras.")
+print("Escribe 'salir' para salir.")
 if __name__ == "__main__":
     inicializar()
     while True:

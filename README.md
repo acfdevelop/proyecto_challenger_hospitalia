@@ -14,6 +14,29 @@ El proyecto implementa una arquitectura **RAG (Retrieval-Augmented Generation)**
 - PyMuPDF
 - python-dotenv
 
+## ⚙️ Instalación
+
+### 1. Clonar el repositorio
+
+```bash
+git clone <URL_DEL_REPOSITORIO>
+cd hospitalia-rag
+```
+
+### 2. Instalar las dependencias
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configurar la API de Gemini
+
+Crear un archivo `.env` con el siguiente contenido:
+
+```env
+GEMINI_API_KEY=TU_API_KEY
+```
+
 ## 📌 ¿Cómo funciona?
 
 El flujo general del asistente es el siguiente:
@@ -32,14 +55,73 @@ El flujo general del asistente es el siguiente:
 
 ## 📂 Estructura del proyecto
 
+```text
 hospitalia-rag/
 │
 ├── documentos/        # Documentación institucional en formato PDF
 ├── vectorstore/       # Índice vectorial FAISS
 ├── app.py             # Punto de entrada de la aplicación
-├── agente.py          # Orquestación del flujo mediante LangGraph
+├── agente.py          # Orquestación mediante LangGraph
 ├── rag.py             # Carga de documentos, embeddings y consultas RAG
 ├── triaje.py          # Clasificación de la intención del usuario
 ├── prompts.py         # Prompts utilizados por el asistente
 ├── .env               # Variables de entorno
 └── README.md
+```
+
+# ▶ Ejecutar HospitalIA
+
+```bash
+python app.py
+
+```
+
+# Ejemplos de uso
+
+### Consulta 1
+
+**Pregunta**
+
+```
+¿Qué necesito para hospitalizarme?
+```
+
+**Respuesta**
+
+```
+Para hospitalizarse deberá presentar...
+```
+
+---
+
+### Consulta 2
+
+**Pregunta**
+
+```
+¿Cómo puedo presentar un reclamo?
+```
+
+**Respuesta**
+
+```
+Para ingresar un reclamo deberá proporcionar su nombre, cédula de identidad, teléfono o correo electrónico, la fecha aproximada del hecho, el servicio involucrado y una descripción clara de la situación.
+```
+
+---
+
+### Consulta 3
+
+**Pregunta**
+
+```
+¿Cuáles son los horarios de visita?
+```
+
+**Respuesta**
+
+```
+El horario de visitas es de lunes a domingo entre las 15:00 y las 18:00 horas.
+```
+
+---

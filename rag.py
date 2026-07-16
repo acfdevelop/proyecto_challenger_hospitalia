@@ -25,7 +25,7 @@ def inicializar():
     if _llm is None:
         _llm = crear_modelo_gemini()
 
-    print("✅ RAG inicializado")
+   
 
 def cargar_documentos():
     """
@@ -58,7 +58,6 @@ def dividir_documentos(documentos):
 
     documentos_divididos = splitter.split_documents(documentos)
 
-    print(f"✂️ Chunks generados: {len(documentos_divididos)}")
 
     return documentos_divididos
 
@@ -80,8 +79,7 @@ def crear_vectorstore(documentos_divididos):
 
     vectorstore.save_local("vectorstore")
 
-    print("🧠 Vectorstore FAISS creado correctamente")
-    print("💾 FAISS guardado en disco")
+  
 
     return vectorstore
 
@@ -101,7 +99,6 @@ def cargar_vectorstore():
         allow_dangerous_deserialization=True
     )
 
-    print("📂 Vectorstore cargado correctamente")
 
     return vectorstore
 
@@ -184,44 +181,4 @@ def responder_pregunta( pregunta, vectorstore=None):
 
     return respuesta.content
 
-if __name__ == "__main__":
 
-    documentos = cargar_documentos()
-    print()
-
-    print("Cantidad de documentos:", len(documentos))
-
-    print()
-
-    print(documentos[0].metadata)
-
-    documentos_divididos = dividir_documentos(documentos)
-
-    print()
-    print(documentos_divididos[0].page_content[:500])
-    print()
-    print(documentos_divididos[0].metadata)
-    print()
-    vectorstore = crear_vectorstore(documentos_divididos)
-
-    print(vectorstore)
-    print("Proceso terminado")
-
-    vectorstore = cargar_vectorstore()
-
-    probar_busqueda(vectorstore)
-
-    print("carga de vectorstore terminada correctamente")
-
-    print()
-    print("Enviar pregunta al llm de Gemini")
-
-    pregunta = "¿Qué necesito para hospitalizarme?"
-
-    respuesta = responder_pregunta(
-        vectorstore,
-        pregunta
-    )
-
-    print("\n🤖 Respuesta:")
-    print(respuesta)

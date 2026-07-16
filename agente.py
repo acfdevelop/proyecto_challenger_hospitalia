@@ -11,7 +11,6 @@ class EstadoAgente(TypedDict):
 
 def nodo_rag(state):
 
-    print("Nodo RAG recibe:", state)
 
     respuesta = responder_pregunta(
         state["pregunta"]
@@ -23,12 +22,10 @@ def nodo_rag(state):
 
 def nodo_triaje(state):
 
-    print("Nodo Triaje recibe:", state)
 
     decision = realizar_triaje(
         state["pregunta"]
     )
-    print("Triaje decidió:", decision)
     return {
         "decision": decision
     }
@@ -80,12 +77,3 @@ builder.add_edge("rag",END)
 
 graph = builder.compile()
 
-if __name__ == "__main__":
-    print("Iniciando agente...")
-    inicializar()
-    pregunta = "¿Qué necesito para hospitalizarme?"
-
-    respuesta = ejecutar_agente(pregunta)
-
-    print("\nRespuesta:")
-    print(respuesta)
