@@ -19,7 +19,7 @@ El proyecto implementa una arquitectura **RAG (Retrieval-Augmented Generation)**
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/acfdevelop/proyecto_challenger_hospitalia.git
 cd hospitalia-rag
 ```
 
