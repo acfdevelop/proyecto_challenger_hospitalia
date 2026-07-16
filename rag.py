@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import streamlit as st
 
 from dotenv import load_dotenv
 
@@ -12,6 +13,9 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
 GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY")
+
+if GOOGLE_API_KEY is None:
+    GOOGLE_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 _vectorstore = None
 _llm = None
