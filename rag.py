@@ -14,8 +14,8 @@ load_dotenv()
 
 GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY")
 
-if GOOGLE_API_KEY is None:
-    GOOGLE_API_KEY = st.secrets["GEMINI_API_KEY"]
+if not GOOGLE_API_KEY:
+    GOOGLE_API_KEY = st.secrets.get("GEMINI_API_KEY")
 
 _vectorstore = None
 _llm = None
