@@ -75,6 +75,9 @@ hospitalia-rag/
 python app.py
 
 ```
+## 🌐 Demo
+
+🚀 **[Probar HospitalIA en Streamlit](https://proyectochallengerhospitalia-uhneasyaadatehjjb7wksq.streamlit.app/)**
 
 # Ejemplos de uso
 
