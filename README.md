@@ -130,6 +130,8 @@ El horario de visitas es de lunes a domingo entre las 15:00 y las 18:00 horas.
 ---
 
 ## 📸 Capturas de pantalla
-<img src="assets/inicio.jpg" width="600">
-<img src="assets/pregunta.jpg" width="600">
-<img src="assets/urlypregunta.jpg" width="600">
+![Inicio](assets/inicio.JPG)
+
+![Consulta](assets/pregunta.JPG)
+
+![Demo](assets/urlypregunta.JPG)
