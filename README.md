@@ -60,6 +60,7 @@ hospitalia-rag/
 │
 ├── documentos/        # Documentación institucional en formato PDF
 ├── vectorstore/       # Índice vectorial FAISS
+├── assets/            # fotos videos demostración
 ├── app.py             # Punto de entrada de la aplicación
 ├── agente.py          # Orquestación mediante LangGraph
 ├── rag.py             # Carga de documentos, embeddings y consultas RAG
@@ -78,6 +79,20 @@ python app.py
 ## 🌐 Demo
 
 🚀 **[Probar HospitalIA en Streamlit](https://proyectochallengerhospitalia-uhneasyaadatehjjb7wksq.streamlit.app/)**
+
+## 📸 Capturas de pantalla
+
+![Inicio](assets/inicio.JPG)
+
+![Consulta](assets/pregunta.JPG)
+
+![Demo](assets/urlypregunta.JPG)
+
+## 🎥 Video demostración
+<a href="assets/demo.mp4">▶ Ver video de demostración</a>
+
+<a href="assets/demo.gif">
+
 
 # Ejemplos de uso
 
@@ -129,13 +144,3 @@ El horario de visitas es de lunes a domingo entre las 15:00 y las 18:00 horas.
 
 ---
 
-## 📸 Capturas de pantalla
-![Inicio](assets/inicio.JPG)
-
-![Consulta](assets/pregunta.JPG)
-
-![Demo](assets/urlypregunta.JPG)
-
-## 🎥 Video demostración
-
-<a href="assets/demo.mp4">▶ Ver video de demostración</a>
