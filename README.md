@@ -88,11 +88,12 @@ python app.py
 
 ![Demo](assets/urlypregunta.JPG)
 
+## 🎥 Demostración
+
+![Demostración de HospitalIA](assets/demo.gif)
+
 ## 🎥 Video demostración
 <a href="assets/demo.mp4">▶ Ver video de demostración</a>
-
-<a href="assets/demo.gif">
-
 
 # Ejemplos de uso
 
