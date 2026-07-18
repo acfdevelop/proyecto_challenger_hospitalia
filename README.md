@@ -88,11 +88,6 @@ hospitalia-rag/
 # ▶ Ejecutar HospitalIA
 
 ```bash
-python app.py
-
-```
-
-```bash
 streamlit run stl_app.py
 
 ```
