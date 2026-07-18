@@ -7,6 +7,7 @@ El proyecto implementa una arquitectura **RAG (Retrieval-Augmented Generation)**
 ## 🚀 Tecnologías utilizadas
 
 - Python 3.13
+- Streamlit
 - LangChain
 - LangGraph
 - Google Gemini
@@ -22,14 +23,28 @@ El proyecto implementa una arquitectura **RAG (Retrieval-Augmented Generation)**
 git clone https://github.com/acfdevelop/proyecto_challenger_hospitalia.git
 cd hospitalia-rag
 ```
+### 2. Crear un entorno virtual
 
-### 2. Instalar las dependencias
+**Windows**
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+### 3. Instalar las dependencias
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Configurar la API de Gemini
+### 4. Configurar la API de Gemini
 
 Crear un archivo `.env` con el siguiente contenido:
 
@@ -76,7 +91,14 @@ hospitalia-rag/
 python app.py
 
 ```
+
+```bash
+streamlit run stl_app.py
+
+```
 ## 🌐 Demo
+
+La aplicación se encuentra desplegada en Streamlit Cloud.
 
 🚀 **[Probar HospitalIA en Streamlit](https://proyectochallengerhospitalia-uhneasyaadatehjjb7wksq.streamlit.app/)**
 
